@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module carta</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>carta</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/chema/Escritorio/PROYECTOS/Documentacion_Proyecto/carta.py">/home/chema/Escritorio/PROYECTOS/Documentacion_Proyecto/carta.py</a></font></td></tr></table>
+    <p><tt><a href="#Mazo">Mazo</a>&nbsp;de&nbsp;Cartas.<br>
+&nbsp;<br>
+Programa&nbsp;para&nbsp;mostrar&nbsp;el&nbsp;funcionamiento&nbsp;de&nbsp;las&nbsp;clases<br>
+a&nbsp;través&nbsp;de&nbsp;una&nbsp;baraja.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="carta.html#Carta">Carta</a>
+</font></dt><dt><font face="helvetica, arial"><a href="carta.html#Mano">Mano</a>
+</font></dt><dt><font face="helvetica, arial"><a href="carta.html#Mazo">Mazo</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Carta">class <strong>Carta</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Carta">Carta</a>(palo,&nbsp;numero)<br>
+&nbsp;<br>
+Clase&nbsp;<a href="#Carta">Carta</a>.<br>
+&nbsp;<br>
+La&nbsp;clase&nbsp;carta&nbsp;representa&nbsp;una&nbsp;única&nbsp;carta&nbsp;y&nbsp;se<br>
+inicializa&nbsp;pasandole&nbsp;el&nbsp;palo&nbsp;y&nbsp;número&nbsp;de&nbsp;la&nbsp;carta&nbsp;a<br>
+representar.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Carta-__init__"><strong>__init__</strong></a>(self, palo, numero)</dt><dd><tt>Inicializa&nbsp;una&nbsp;carta&nbsp;con&nbsp;el&nbsp;palo&nbsp;y&nbsp;el&nbsp;número&nbsp;especificados.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;palo&nbsp;(str):&nbsp;El&nbsp;palo&nbsp;de&nbsp;la&nbsp;carta.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;numero&nbsp;(int):&nbsp;El&nbsp;número&nbsp;de&nbsp;la&nbsp;carta.</tt></dd></dl>
+
+<dl><dt><a name="Carta-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Representación&nbsp;de&nbsp;la&nbsp;carta&nbsp;como&nbsp;una&nbsp;cadena.</tt></dd></dl>
+
+<dl><dt><a name="Carta-esta_en_mazo"><strong>esta_en_mazo</strong></a>(self, mazo)</dt><dd><tt>Comprueba&nbsp;si&nbsp;una&nbsp;determinada&nbsp;carta&nbsp;está&nbsp;en&nbsp;el&nbsp;mazo.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mazo&nbsp;(list):&nbsp;La&nbsp;lista&nbsp;de&nbsp;cartas&nbsp;en&nbsp;el&nbsp;mazo.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;si&nbsp;la&nbsp;carta&nbsp;está&nbsp;en&nbsp;el&nbsp;mazo,&nbsp;False&nbsp;en&nbsp;caso&nbsp;contrario.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>numero</strong></dt>
+<dd><tt>int:&nbsp;El&nbsp;número&nbsp;de&nbsp;la&nbsp;carta.</tt></dd>
+</dl>
+<dl><dt><strong>palo</strong></dt>
+<dd><tt>str:&nbsp;El&nbsp;palo&nbsp;de&nbsp;la&nbsp;carta.</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Mano">class <strong>Mano</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Mano">Mano</a>(jugador)<br>
+&nbsp;<br>
+Clase&nbsp;<a href="#Mano">Mano</a>.<br>
+&nbsp;<br>
+Representa&nbsp;la&nbsp;mano&nbsp;de&nbsp;un&nbsp;jugador,&nbsp;con&nbsp;métodos&nbsp;para&nbsp;recibir&nbsp;cartas<br>
+y&nbsp;mostrar&nbsp;la&nbsp;mano&nbsp;actual.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Mano-__init__"><strong>__init__</strong></a>(self, jugador)</dt><dd><tt>Inicializa&nbsp;una&nbsp;nueva&nbsp;mano&nbsp;para&nbsp;el&nbsp;jugador&nbsp;especificado.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;jugador&nbsp;(str):&nbsp;El&nbsp;nombre&nbsp;del&nbsp;jugador.</tt></dd></dl>
+
+<dl><dt><a name="Mano-mostrar_mano"><strong>mostrar_mano</strong></a>(self)</dt><dd><tt>Muestra&nbsp;las&nbsp;cartas&nbsp;actuales&nbsp;en&nbsp;la&nbsp;mano&nbsp;del&nbsp;jugador.</tt></dd></dl>
+
+<dl><dt><a name="Mano-recibir_carta"><strong>recibir_carta</strong></a>(self, carta)</dt><dd><tt>Recibe&nbsp;una&nbsp;carta&nbsp;y&nbsp;la&nbsp;añade&nbsp;a&nbsp;la&nbsp;mano.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;carta&nbsp;(<a href="#Carta">Carta</a>):&nbsp;La&nbsp;carta&nbsp;recibida.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Mazo">class <strong>Mazo</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Clase&nbsp;<a href="#Mazo">Mazo</a>.<br>
+&nbsp;<br>
+Representa&nbsp;un&nbsp;mazo&nbsp;de&nbsp;cartas,&nbsp;con&nbsp;métodos&nbsp;para&nbsp;crear&nbsp;un&nbsp;mazo<br>
+completo,&nbsp;barajarlo&nbsp;y&nbsp;repartir&nbsp;cartas&nbsp;a&nbsp;jugadores.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Mazo-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Inicializa&nbsp;un&nbsp;nuevo&nbsp;mazo.</tt></dd></dl>
+
+<dl><dt><a name="Mazo-rellenar"><strong>rellenar</strong></a>(self)</dt><dd><tt>Rellena&nbsp;el&nbsp;mazo&nbsp;con&nbsp;todas&nbsp;las&nbsp;cartas&nbsp;posibles&nbsp;y&nbsp;las&nbsp;baraja.</tt></dd></dl>
+
+<dl><dt><a name="Mazo-repartir"><strong>repartir</strong></a>(self, jugadores)</dt><dd><tt>Reparte&nbsp;cartas&nbsp;a&nbsp;los&nbsp;jugadores&nbsp;especificados.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;jugadores&nbsp;(list):&nbsp;Una&nbsp;lista&nbsp;de&nbsp;los&nbsp;nombres&nbsp;de&nbsp;los&nbsp;jugadores.</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>cartas</strong></dt>
+<dd><tt>list:&nbsp;Las&nbsp;cartas&nbsp;en&nbsp;el&nbsp;mazo.</tt></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>jugadores</strong> = ['Jugador 1', 'Jugador 2']<br>
+<strong>mi_carta</strong> = 5 de dragon<br>
+<strong>mi_mazo</strong> = &lt;carta.Mazo object&gt;</td></tr></table>
+</body></html>

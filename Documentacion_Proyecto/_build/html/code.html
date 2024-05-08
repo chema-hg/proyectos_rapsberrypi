@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Documentación del Código &#8212; documentación de carta - 0.1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=9c9b61ad"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=efdbd0b9"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="¡Bienvenido a la documentación de carta!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-carta">
+<span id="documentacion-del-codigo"></span><h1>Documentación del Código<a class="headerlink" href="#module-carta" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="carta.Carta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">carta.</span></span><span class="sig-name descname"><span class="pre">Carta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">palo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numero</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#carta.Carta" title="Link to this definition">¶</a></dt>
+<dd><p>Clase Carta.</p>
+<p>La clase carta representa una única carta y se
+inicializa pasandole el palo y número de la carta a
+representar.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="carta.Carta.esta_en_mazo">
+<span class="sig-name descname"><span class="pre">esta_en_mazo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mazo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#carta.Carta.esta_en_mazo" title="Link to this definition">¶</a></dt>
+<dd><p>Comprueba si una determinada carta está en el mazo.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>mazo (list): La lista de cartas en el mazo.</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool: True si la carta está en el mazo, False en caso contrario.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="carta.Carta.numero">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">numero</span></span><a class="headerlink" href="#carta.Carta.numero" title="Link to this definition">¶</a></dt>
+<dd><p>int: El número de la carta.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="carta.Carta.palo">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">palo</span></span><a class="headerlink" href="#carta.Carta.palo" title="Link to this definition">¶</a></dt>
+<dd><p>str: El palo de la carta.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="carta.Mano">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">carta.</span></span><span class="sig-name descname"><span class="pre">Mano</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jugador</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#carta.Mano" title="Link to this definition">¶</a></dt>
+<dd><p>Clase Mano.</p>
+<p>Representa la mano de un jugador, con métodos para recibir cartas
+y mostrar la mano actual.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="carta.Mano.mostrar_mano">
+<span class="sig-name descname"><span class="pre">mostrar_mano</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#carta.Mano.mostrar_mano" title="Link to this definition">¶</a></dt>
+<dd><p>Muestra las cartas actuales en la mano del jugador.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="carta.Mano.recibir_carta">
+<span class="sig-name descname"><span class="pre">recibir_carta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">carta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#carta.Mano.recibir_carta" title="Link to this definition">¶</a></dt>
+<dd><p>Recibe una carta y la añade a la mano.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>carta (Carta): La carta recibida.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="carta.Mazo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">carta.</span></span><span class="sig-name descname"><span class="pre">Mazo</span></span><a class="headerlink" href="#carta.Mazo" title="Link to this definition">¶</a></dt>
+<dd><p>Clase Mazo.</p>
+<p>Representa un mazo de cartas, con métodos para crear un mazo
+completo, barajarlo y repartir cartas a jugadores.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="carta.Mazo.cartas">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cartas</span></span><a class="headerlink" href="#carta.Mazo.cartas" title="Link to this definition">¶</a></dt>
+<dd><p>list: Las cartas en el mazo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="carta.Mazo.rellenar">
+<span class="sig-name descname"><span class="pre">rellenar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#carta.Mazo.rellenar" title="Link to this definition">¶</a></dt>
+<dd><p>Rellena el mazo con todas las cartas posibles y las baraja.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="carta.Mazo.repartir">
+<span class="sig-name descname"><span class="pre">repartir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jugadores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#carta.Mazo.repartir" title="Link to this definition">¶</a></dt>
+<dd><p>Reparte cartas a los jugadores especificados.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>jugadores (list): Una lista de los nombres de los jugadores.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">carta</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Documentación del Código</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#carta.Carta"><code class="docutils literal notranslate"><span class="pre">Carta</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#carta.Mano"><code class="docutils literal notranslate"><span class="pre">Mano</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#carta.Mazo"><code class="docutils literal notranslate"><span class="pre">Mazo</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="capítulo anterior">¡Bienvenido a la documentación de carta!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, chema.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/code.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
